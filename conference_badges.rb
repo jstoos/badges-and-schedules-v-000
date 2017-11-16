@@ -28,5 +28,4 @@ def printer(names)
       puts assign_rooms[counter]
       counter +=1
     end
-  end
 end
