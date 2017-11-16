@@ -19,15 +19,10 @@ def assign_rooms(names)
 end
 
 def printer(names)
-  counter = 0
-    names.each do
-      batch_badge_creator(names)
-      puts batch_badge_creator(names[counter])
-      counter +=1
+    batch_badge_creator(names).each do |name|
+      puts name
     end
-    names.each do
-      assign_rooms(names)
-      puts assign_rooms(names[counter])
-      counter +=1
+    assign_rooms(names).each do |room|
+      puts room 
     end
 end
