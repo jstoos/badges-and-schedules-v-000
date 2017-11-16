@@ -21,10 +21,12 @@ end
 def printer(names)
   counter = 0
     names.each do
+      batch_badge_creator(names)
       puts batch_badge_creator(names[counter])
       counter +=1
     end
     names.each do
+      assign_rooms(names)
       puts assign_rooms(names[counter])
       counter +=1
     end
