@@ -19,8 +19,15 @@ def assign_rooms(names)
 end
 
 def printer(names)
-  names.each do
-    puts batch_badge_creator(names)
-    puts assign_rooms(names)
-  end
+  counter = 0
+    names.each do
+      puts batch_badge_creator[counter]
+      counter +=1
+    end
+    names.each do
+      puts assign_rooms[counter]
+      counter +=1
+    end
+      counter +=1
+    end
 end
